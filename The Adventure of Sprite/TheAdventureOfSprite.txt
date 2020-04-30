@@ -1,0 +1,43 @@
+
+Werelden
+{
+	Wereld1
+	{
+		Tileset: "Grass tileset"
+		Enemies: []
+		Boss: ""
+		lvlAmount: 2
+	}
+	
+	Wereld2
+	{
+		Tileset: "Desert tileset"
+		Enemies: []
+		Boss: ""
+		lvlAmount: 2
+	}
+
+	Wereld3
+	{
+		Tileset: "Winter tileset"
+		Enemies: []
+		Boss: ""
+		lvlAmount: 2
+	}
+
+	Wereld4
+	{
+		Tileset: "Graveyard tileset"
+		Enemies: []
+		Boss: ""
+		lvlAmount: 2
+	}
+
+	Wereld5
+	{
+		Tileset: "Lab tileset"
+		Enemies: []
+		Boss: ""
+		lvlAmount: 2
+	}
+}
