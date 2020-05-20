@@ -1,0 +1,5 @@
+.Button {
+	border-style: solid;
+	border-width: 178px 181px 0px 181px;
+	border-image: url(slice_Button_22.png) 178 181 0 181 fill stretch;
+}
