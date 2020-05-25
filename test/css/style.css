@@ -3,5 +3,14 @@
   padding: 0px;
 }
 .sprite {
+  position: absolute;
   height: 200px;
+}
+.ground {
+  background-image: url(../image/ground.png);
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  background-repeat: repeat-x;
+  bottom: 0px;
 }
