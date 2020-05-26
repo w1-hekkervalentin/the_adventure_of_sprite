@@ -25,8 +25,8 @@
 .topBanner {
   z-index: 5;
   position: absolute;
-  width: 500px;
-  transform: translate(-50%, -190%);
+  width: 350px;
+  transform: translate(-50%, -220%);
 }
 
 body {
