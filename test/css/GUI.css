@@ -1,0 +1,38 @@
+.MainMenu{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#startButton, #MainMenu{
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#startButton{
+  height: 100px;
+}
+
+#startButton:hover {
+  content: url('../Assets/GUI/png/Button/PNG/Hover/ButtonRight.png');
+}
+
+#startButton:active {
+  content: url('../Assets/GUI/png/Button/PNG/Click/ButtonRight.png');
+}
+
+.topBanner {
+  z-index: 5;
+  position: absolute;
+  width: 500px;
+  transform: translate(-50%, -190%);
+}
+
+body {
+  background-image: url(../Assets/TileSets/W1Grass/png/BG/BG.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+}
