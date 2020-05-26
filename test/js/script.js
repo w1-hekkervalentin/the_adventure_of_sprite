@@ -19,15 +19,18 @@ function collision($div1, $div2) {
 var sprite = $(".sprite");
 var ground = $(".ground");
 var spriteTop = $(".sprite").position().top;
+var pause = false
 
-setInterval(
+var zwaartekracht = window.setInterval(
   function()
   {
-    if( collision( sprite, ground) == false)
-    {
-      spriteTop += 2;
-      $(".sprite").css('top', spriteTop)
-    }
+		if (!pause) {
+			if( collision( sprite, ground) == false)
+			{
+				spriteTop += 2;
+				$(".sprite").css('top', spriteTop)
+			}
+		}
 }, 10);
 
 $(document).keydown
@@ -35,8 +38,9 @@ $(document).keydown
   function(e) {
     switch (e.keyCode) {
       case 32:
-      //spriteTop -= 50;
-      $(".sprite").animate({top: "-=50"}).animate( { top: "+=75" });
+      pause = true;
+      $(".sprite").animate({top: "-=50"});
+			pause = false;
         break;
       default:
       return;
