@@ -1,4 +1,5 @@
 .MainMenu{
+  z-index: 2;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,8 +26,17 @@
 .topBanner {
   z-index: 5;
   position: absolute;
-  width: 350px;
-  transform: translate(-50%, -220%);
+  width: 330px;
+  transform: translate(-50%, -250%);
+}
+
+.levelSelectWindow {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 
 body {
