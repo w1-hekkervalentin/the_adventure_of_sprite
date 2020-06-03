@@ -1,3 +1,4 @@
 $("#startButton").click(function(){
-  $(".MainMenu").fadeOut();
+  $(".MainMenu").fadeOut()
+  $(".levelSelectWindow").fadeIn();
 });
