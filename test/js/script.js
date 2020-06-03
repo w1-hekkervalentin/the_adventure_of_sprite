@@ -14,7 +14,7 @@ $(document).keydown
       $(".sprite").css({left: "+=10"});
         break;
       case 37:
-      $(".sprite").css({left: "=10"});
+      $(".sprite").css({left: "-=10"});
         break;
       default:
       return;
