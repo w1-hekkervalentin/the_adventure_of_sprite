@@ -6,18 +6,30 @@
 $(document).keydown
 (
   function(e) {
-    switch (e.keyCode) {
-      case 32:
+    // switch (e.keyCode) {
+    //   case 32:
+    //   // springen
+    //   $(".sprite").animate({top: "-=150"});
+    //     break;
+    //   case 39:
+    //   // naar rechts
+    //   $(".sprite").css({left: "+=10"});
+    //     break;
+    //   case 37:
+    //   // naar links
+    //   $(".sprite").css({left: "-=10"});
+    //     break;
+    //   default:
+    //   return;
+    // }
+    if(e.keyCode == 39) {
+      $(".sprite").animate({left: "+=10"});
+    }
+    if(e.keyCode == 37) {
+      $(".sprite").animae({left: "-=10"});
+    }
+    if(e.keyCode == 32) {
       $(".sprite").animate({top: "-=150"});
-        break;
-      case 39:
-      $(".sprite").css({left: "+=10"});
-        break;
-      case 37:
-      $(".sprite").css({left: "-=10"});
-        break;
-      default:
-      return;
     }
   }
 );
