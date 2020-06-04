@@ -31,8 +31,12 @@ $(document).keydown
       $(".sprite").css({left: "-=5", transform: "scaleX(-1)"});
     }
     // springen
-    if(e.keyCode == 32) {
+    // if(e.keyCode == 32) {
+    //   $(".sprite").animate({top: "-=150"});
+    // }
+    if(e.keyCode == 32 && e.keyCode == 39) {
       $(".sprite").animate({top: "-=150"});
+      $(".sprite").css({left: "+=5", transform: "scaleX(1)"});
     }
   }
 );
