@@ -22,12 +22,15 @@ $(document).keydown
     //   default:
     //   return;
     // }
+    // naar rechts
     if(e.keyCode == 39) {
-      $(".sprite").animate({left: "+=10"});
+      $(".sprite").css({left: "+=5", transform: "scaleX(1)"});
     }
+    // naar links
     if(e.keyCode == 37) {
-      $(".sprite").animae({left: "-=10"});
+      $(".sprite").css({left: "-=5", transform: "scaleX(-1)"});
     }
+    // springen
     if(e.keyCode == 32) {
       $(".sprite").animate({top: "-=150"});
     }

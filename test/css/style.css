@@ -5,7 +5,7 @@
 .sprite {
   position: absolute;
   height: 200px;
-  top: 1s00px;
+  top: 400px;
 }
 .ground {
   background-image: url(../image/ground.png);
