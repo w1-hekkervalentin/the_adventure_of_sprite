@@ -2,6 +2,7 @@
 // var ground = $(".ground");
 // var spriteTop = $(".sprite").position().top;
 // var pause = false
+var lastKey
 
 $(document).keydown
 (
@@ -22,21 +23,31 @@ $(document).keydown
     //   default:
     //   return;
     // }
+
+
     // naar rechts
     if(e.keyCode == 39) {
       $(".sprite").css({left: "+=5", transform: "scaleX(1)"});
+      lastKey = e.keyCode;
     }
     // naar links
     if(e.keyCode == 37) {
       $(".sprite").css({left: "-=5", transform: "scaleX(-1)"});
+      lastKey = e.keyCode;
     }
     // springen
-    // if(e.keyCode == 32) {
-    //   $(".sprite").animate({top: "-=150"});
-    // }
-    if(e.keyCode == 32 && e.keyCode == 39) {
-      $(".sprite").animate({top: "-=150"});
-      $(".sprite").css({left: "+=5", transform: "scaleX(1)"});
+    if(e.keyCode == 32) {
+      if (lastKey == 39) {
+        console.log(lastKey);
+        $(".sprite").animate({left: "+=25", top: "-=150", left: "+=50"});
+      }
+      else if (lastKey == 37) {
+        console.log(lastKey);
+        $(".sprite").animate({left: "-=25", top: "-=150", left: "-=50"});
+      }
+      else {
+        $(".sprite").animate({ top: "-=150"});
+      }
     }
   }
 );
@@ -66,5 +77,5 @@ $(document).keydown
                 g.css('top', g.offset().top + 10);
             }
         });
-    }, 50);
+    }, 25);
 })();
