@@ -7,13 +7,17 @@ var lastKey
 $(document).keydown(function(e) {
     // naar rechts
     if(e.keyCode == 39) {
-
+      if ($(".sprite").attr("src") != "../Assets/Characters/The Hero/Walk/Walk.gif") {
+        $(".sprite").attr("src","../Assets/Characters/The Hero/Walk/Walk.gif")
+      }
       $(".sprite").css({left: "+=5", transform: "scaleX(1)"});
       lastKey = e.keyCode;
     }
     // naar links
     if(e.keyCode == 37) {
-
+      if ($(".sprite").attr("src") != "../Assets/Characters/The Hero/Run/Run.gif") {
+        $(".sprite").attr("src","../Assets/Characters/The Hero/Run/Run.gif")
+      }
       $(".sprite").css({left: "-=5", transform: "scaleX(-1)"});
       lastKey = e.keyCode;
     }
@@ -33,23 +37,20 @@ $(document).keydown(function(e) {
         $(".sprite").animate({ top: "-=150"});
       }
     }
-    setInterval(function(){
-      if (lastKey == 39) {
-        $(".sprite").attr("src","../Assets/Characters/The Hero/Walk/Walk.gif")
-      }
-      else if (lastKey == 37) {
-        $(".sprite").attr("src","../Assets/Characters/The Hero/Run/Run.gif")
-      }
-    }, 900);
+    // setInterval(function(){
+    //   else if (lastKey == 37) {
+    //
+    //   }
+    // }, 900);
   }
 );
 $(document).keyup(function() {
   setTimeout(
   function()
   {
-    $(".sprite").attr("src","../Assets/Characters/The Hero/Idle/Idle.gif");
+    $(".sprite").attr("src","../Assets/Characters/The Hero/Idle/Idle.gif")
   }, 900);
-  lastKey = 0;
+
 });
 (function() {
     var gravity = $('.gravity'),
