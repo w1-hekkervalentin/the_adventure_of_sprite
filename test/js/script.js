@@ -37,11 +37,6 @@ $(document).keydown(function(e) {
         $(".sprite").animate({ top: "-=150"});
       }
     }
-    // setInterval(function(){
-    //   else if (lastKey == 37) {
-    //
-    //   }
-    // }, 900);
   }
 );
 $(document).keyup(function() {

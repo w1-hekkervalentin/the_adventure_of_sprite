@@ -13,6 +13,7 @@ body {
 }
 
 .w {
-  height: 10px;
+  position: absolute;
+  height: 100vh ;
   width: auto;
 }
