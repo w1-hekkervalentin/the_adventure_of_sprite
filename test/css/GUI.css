@@ -29,7 +29,7 @@
   width: 330px;
   transform: translate(-50%, -250%);
 }
-
+/* 
 .levelSelectWindow {
   z-index: 1;
   position: absolute;
@@ -37,7 +37,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-}
+} */
 
 body {
   background-image: url(../Assets/TileSets/W1Grass/png/BG/BG.png);
