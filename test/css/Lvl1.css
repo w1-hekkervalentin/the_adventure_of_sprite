@@ -6,11 +6,11 @@
 .sprite  {
   position: absolute;
   height: 200px;
+  left: 50px;
 }
 
 body {
   height: 100vh;
-  overflow: hidden;
 }
 
 .w1lvl1 {
@@ -21,10 +21,12 @@ body {
 
 .obstacle {
   background-color: red;
-  z-index: 20;
 }
 
 #obstacle1 {
   position: absolute;
   height: 100px;
+  width: 325px;
+  top: 744px;
+  left: 50px;
 }

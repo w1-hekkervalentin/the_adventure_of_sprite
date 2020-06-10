@@ -6,7 +6,7 @@ var lastKey
 
 $(document).keydown(function(e) {
     // naar rechts
-    if(e.keyCode == 39) {
+    if(e.keyCode == 68) {
       if ($(".sprite").attr("src") != "../Assets/Characters/The Hero/Walk/Walk.gif") {
         $(".sprite").attr("src","../Assets/Characters/The Hero/Walk/Walk.gif")
       }
@@ -14,7 +14,7 @@ $(document).keydown(function(e) {
       lastKey = e.keyCode;
     }
     // naar links
-    if(e.keyCode == 37) {
+    if(e.keyCode == 65) {
       if ($(".sprite").attr("src") != "../Assets/Characters/The Hero/Run/Run.gif") {
         $(".sprite").attr("src","../Assets/Characters/The Hero/Run/Run.gif")
       }
@@ -23,13 +23,13 @@ $(document).keydown(function(e) {
     }
     // springen
     if(e.keyCode == 32) {
-      if (lastKey == 39) {
+      if (lastKey == 68) {
         $(".sprite").attr("src","../Assets/Characters/The Hero/Jump/Jump.gif")
-        $(".sprite").animate({left: "+=25", top: "-=150", left: "+=50"})
+        $(".sprite").animate({left: "+=110", top: "-=150", left: "+=160"})
       }
-      else if (lastKey == 37) {
+      else if (lastKey == 65) {
         $(".sprite").attr("src","../Assets/Characters/The Hero/Jump/Jump.gif")
-        $(".sprite").animate({left: "-25", top: "-=150", left: "-=50"})
+        $(".sprite").animate({left: "-110", top: "-=150", left: "-=160"})
 
       }
       else {
