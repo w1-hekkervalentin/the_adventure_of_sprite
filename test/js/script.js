@@ -70,7 +70,10 @@ setInterval
     setTimeout(
     function()
     {
-      $(".sprite").attr("src","../Assets/Characters/The Hero/Idle/Idle.gif")
+      if ($(".sprite").attr("src") != "../Assets/Characters/The Hero/Dead/Dead.gif") {
+        $(".sprite").attr("src","../Assets/Characters/The Hero/Idle/Idle.gif")
+      }
+
     }, 900);
   });
 

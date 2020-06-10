@@ -18,68 +18,70 @@ body {
   height: 100vh ;
   width: auto;
 }
-
+.obstacle {
+  background-color: red;
+}
 #obstacle1 {
   position: absolute;
   height: 100px;
-  width: 260px;
-  top: 620px;
-  left: 45px;
+  width: 25%;
+  top: 83%;
+  left: 4%;
 }
 
 #obstacle2 {
   position: absolute;
   height: 100px;
-  width: 260px;
-  top: 620px;
-  left: 435px;
+  width: 25%;
+  top: 83%;
+  left: 40%;
 }
 
 #obstacle3 {
   position: absolute;
   height: 50px;
-  width: 190px;
-  top: 525px;
-  left: 720px;
+  width: 18%;
+  top: 71%;
+  left: 68%;
 }
 
 #obstacle4 {
   position: absolute;
   height: 100px;
-  width: 330px;
-  top: 620px;
-  left: 960px;
+  width: 31%;
+  top: 83%;
+  left: 90%;
 }
 
 #obstacle5 {
   position: absolute;
   height: 50px;
-  width: 270px;
-  top: 495px;
-  left: 1210px;
+  width: 25%;
+  top: 67%;
+  left: 114.5%;
 }
 
 #obstacle6 {
   position: absolute;
   height: 50px;
-  width: 320px;
-  top: 555px;
-  left: 1465px;
+  width: 31%;
+  top: 75%;
+  left: 138%;
 }
 
 #obstacle7 {
   position: absolute;
   height: 50px;
-  width: 310px;
-  top: 620px;
-  left: 1695px;
+  width: 31%;
+  top: 82%;
+  left: 160%;
 }
 
 death {
   position: absolute;
   height: 50px;
   width: 1695px;
-  top: 640px;
+  bottom: 10px;
 }
 
 win {
@@ -87,8 +89,8 @@ win {
   position: absolute;
   height: 100px;
   width: 10px;
-  left: 131%;
-  top: 70%;
+  left: 186%;
+  top: 71%;
 }
 
 .MainMenu{
