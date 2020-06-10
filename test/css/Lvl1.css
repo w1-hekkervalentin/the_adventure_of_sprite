@@ -10,10 +10,21 @@
 
 body {
   height: 100vh;
+  overflow: hidden;
 }
 
-.w {
+.w1lvl1 {
   position: absolute;
   height: 100vh ;
   width: auto;
+}
+
+.obstacle {
+  background-color: red;
+  z-index: 20;
+}
+
+#obstacle1 {
+  position: absolute;
+  height: 100px;
 }

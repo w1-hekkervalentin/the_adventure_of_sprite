@@ -75,3 +75,13 @@ $(document).keyup(function() {
         });
     }, 25);
 })();
+
+
+//GUI CODE
+$("#startButton").click(function(){
+  $(".MainMenu").fadeOut();
+});
+
+// function startLevel() {
+//   window.location.href = "../test/levels/Wereld_1/Lvl1.html";
+// };
