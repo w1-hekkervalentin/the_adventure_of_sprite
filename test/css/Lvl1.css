@@ -5,7 +5,7 @@
 
 .sprite  {
   position: absolute;
-  height: 200px;
+  height: 100px;
   left: 50px;
 }
 
@@ -19,14 +19,107 @@ body {
   width: auto;
 }
 
-.obstacle {
-  background-color: red;
-}
-
 #obstacle1 {
   position: absolute;
   height: 100px;
-  width: 325px;
-  top: 744px;
-  left: 50px;
+  width: 260px;
+  top: 620px;
+  left: 45px;
+}
+
+#obstacle2 {
+  position: absolute;
+  height: 100px;
+  width: 260px;
+  top: 620px;
+  left: 435px;
+}
+
+#obstacle3 {
+  position: absolute;
+  height: 50px;
+  width: 190px;
+  top: 525px;
+  left: 720px;
+}
+
+#obstacle4 {
+  position: absolute;
+  height: 100px;
+  width: 330px;
+  top: 620px;
+  left: 960px;
+}
+
+#obstacle5 {
+  position: absolute;
+  height: 50px;
+  width: 270px;
+  top: 495px;
+  left: 1210px;
+}
+
+#obstacle6 {
+  position: absolute;
+  height: 50px;
+  width: 320px;
+  top: 555px;
+  left: 1465px;
+}
+
+#obstacle7 {
+  position: absolute;
+  height: 50px;
+  width: 310px;
+  top: 620px;
+  left: 1695px;
+}
+
+death {
+  position: absolute;
+  height: 50px;
+  width: 1695px;
+  top: 640px;
+}
+
+win {
+  border: 1px solid blue;
+  position: absolute;
+  height: 100px;
+  width: 10px;
+  left: 131%;
+  top: 70%;
+}
+
+.MainMenu{
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: none; */
+}
+
+#reloadButton, #Menu{
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#reloadButton{
+  height: 100px;
+}
+
+#reloadButton:hover {
+  content: url('../Assets/GUI/png/Button/PNG/Hover/ReloadButton.png');
+}
+
+#reloadButton:active {
+  content: url('../Assets/GUI/png/Button/PNG/Click/ReloadButton.png');
+}
+
+.topBanner {
+  z-index: 5;
+  position: absolute;
+  width: 330px;
+  transform: translate(-50%, -250%);
 }

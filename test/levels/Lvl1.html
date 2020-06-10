@@ -9,10 +9,16 @@
         <meta charset="utf-8">
         <link rel="icon" type="image/png" href="../image/favicon.png">
         <link rel="stylesheet" type="text/css" href="../css/Lvl1.css">
+        <link rel="stylesheet" type="text/css" href="../css/GUI.css">
         <script src="../jquery/jquery-3.5.1.min.js"></script>
         <script src="../js/script.js" defer></script>
     </head>
     <body>
+      <div class="MainMenu">
+        <img class="topBanner" src="../Assets/GUI/png/Windows/PNG/CompleteLevelbanner.png" alt="topBanner">
+        <img id="Menu" src="../Assets/GUI/png/Windows/PNG/EmptyMainMenu.png" alt="Menu">
+        <img id="reloadButton" onclick="respawn()" src="../Assets/GUI/png/Button/PNG/Normal/ReloadButton.png" alt="reloadButton">
+        </div>
         <img class="w1lvl1" src="../Assets/TileSets/W1Grass/W1LVL1.PNG" alt="LVL1">
         <img class="sprite gravity" src="../Assets/Characters/The Hero/Idle/Idle.gif" alt="TheHero">
         <div class="obstacle" id="obstacle1"></div>
@@ -22,5 +28,7 @@
         <div class="obstacle" id="obstacle5"></div>
         <div class="obstacle" id="obstacle6"></div>
         <div class="obstacle" id="obstacle7"></div>
+        <death></death>
+        <win></win>
     </body>
 </html>
