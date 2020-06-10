@@ -18,9 +18,6 @@ body {
   height: 100vh ;
   width: auto;
 }
-.obstacle {
-  background-color: red;
-}
 #obstacle1 {
   position: absolute;
   height: 100px;
